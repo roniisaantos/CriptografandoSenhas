@@ -11,7 +11,7 @@ public class Aplicacao {
 
         Codificador.preenchendoCaracteres();
 
-        System.out.print("Digite uma senha de até 10 caracteres para criptografar: ");
+        System.out.print("Digite uma senha para criptografar: ");
 
         Scanner entrada = new Scanner(System.in);
         String senha = entrada.nextLine();
