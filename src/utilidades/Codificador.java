@@ -48,13 +48,20 @@ public class Codificador {
 
             if (senha.charAt(controleSenha) != caracteres[controleComparacao]) {
                 controleComparacao++;
-            }
-            else {
+            } else {
                 String indiceFormatado = String.format("%02d", controleComparacao);
                 senhaCodificada.add(indiceFormatado + gerarStringsAleatorias());
                 controleSenha++;
                 controleComparacao = 0;
             }
+        }
+    }
+
+    public static void exibirSenhaCodificada(ArrayList<String> senhaCodificada) {
+
+        System.out.print("\nSenha codificada: ");
+        for (String s : senhaCodificada) {
+            System.out.print(s);
         }
     }
 }
